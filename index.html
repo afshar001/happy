@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11.0.7/swiper.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.4.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="script" href="jquery-3.6.0.min.js">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        :root {
+            --clr: linear-gradient var(to right, red yellow, blue)
+        }
+    </style>
+    <title>new year</title>
+</head>
+<body>
+    <div class="contaienr"> 
+
+        <div class="head">  
+            <h1>HAPPY <br> NEW <br> YEAR</h1>
+        </div>
+        <br><br>
+        <h2>نماد الهام بخش امسالتو انتخاب کن</h2>
+        <br><br>
+    <div class="grid-container">
+        <div class="buttons">
+            <button class="button" data-image-id="content1" onclick="ToggleImage('content1')">
+            <div class="ring">
+                <i></i>
+                <i></i>
+                <i></i>
+            </div>        
+            </button>        
+                    <button class="button" data-image-id="content2" onclick="ToggleImage('content2')">
+                    <div class="ring">
+                        <i></i>
+                        <i></i>
+                        <i></i>
+                    </div>
+                </button>
+                    <button class="button" data-image-id="content3" onclick="ToggleImage('content3')">
+                        <div class="ring">
+                            <i></i>
+                            <i></i>
+                            <i></i>
+                        </div>
+                    </button>
+                    <button class="button" data-image-id="content4" onclick="ToggleImage('content4')">
+                        <div class="ring">
+                            <i></i>
+                            <i></i>
+                            <i></i>
+                        </div>
+                    </button>
+                    <button class="button" data-image-id="content5" onclick="ToggleImage('content5')">
+                        <div class="ring">
+                            <i></i>
+                            <i></i>
+                            <i></i>
+                        </div>
+                    </button>
+            <button class="button" data-image-id="content6" onclick="ToggleImage('content6')">
+                <div class="ring">
+                    <i></i>
+                    <i></i>
+                    <i></i>
+                </div>
+            </button>
+        </div>
+        </div>
+        
+    <br>
+    <br>
+    <div class="images">
+        
+        
+        
+        
+        </div>
+        <div id="content1" class="image-container" style="display: none;">
+            <img src="art_nick_deligaris_dragon_rider_mountain_castle_tower_94138_1600x900.jpg" alt="">
+        </div>
+        <div id="content2" class="image-container" style="display: none;">
+            <img src="1467167_984.jpg" alt="">
+        </div>
+        <div id="content3" class="image-container" style="display: none;">
+            <img src="Jowhareh_galleries_6_poster_c6adbea9-1319-4397-83b8-89e745893bbe.jpeg" alt="">
+        </div>
+        <div id="content4" class="image-container" style="display: none;">
+            <img src="jFkNjdjYWUyN.jpg" alt="">
+        </div>
+        <div id="content5" class="image-container" style="display: none;">
+            <img src="unnamed.jpg" alt="">
+        </div>
+        <div id="content6" class="image-container" style="display: none;">
+            <img src="-1615100840.jpg" alt="" class="center-image">
+        </div>
+    </div>
+    <br> <br>
+    <div class="hero">
+        <img src="images.jpg" alt="">
+    </div>
+    
+</div>
+    <script>
+        function ToggleImage(id){
+            var content = document.getElementById(id);
+            if (content.style.display === "none"){
+                content.style.display = "block";
+            }  else {
+                content.style.display = "none";
+            }
+         }
+    </script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.4.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            let lastVisibleImage = null;
+
+            $('.button').click(function() {
+                let imageId = $(this).data('image-id');
+                
+                if (lastVisibleImage === imageId) {
+                    $('#' + imageId).hide();
+                    lastVisibleImage = null;
+                } else {
+                    if (lastVisibleImage) {
+                        $('#' + lastVisibleImage).hide();
+                    }
+                    $('#' + imageId).show();
+                    lastVisibleImage = imageId;
+                }
+            });
+        });
+    </script>
+    <script>
+     function ToggleImage(id) {
+    var allImages = document.querySelectorAll('.image-container img');
+    
+    allImages.forEach(function(image) {
+        image.classList.remove('active');
+    });
+
+    var content = document.getElementById(id);
+    content.classList.add('active');
+}
+
+    </script>
+</body>
+</html>
