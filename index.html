@@ -15,6 +15,12 @@
     <title>new year</title>
 </head>
 <body>
+    <audio controls autoplay>
+        <source src="back.mp3" type="audio/ogg">
+        <source src="back.mp3" type="audio/mpeg">
+      Your browser does not support the audio element.
+      </audio>
+      
     <div class="contaienr"> 
 
         <div class="head">  
@@ -25,8 +31,9 @@
         <br><br>
     <div class="grid-container">
         <div class="buttons">
-            <button class="button" data-image-id="content1" onclick="ToggleImage('content1')">
-            <div class="ring">
+            <button class="button" data-image-id="content1" onclick="ToggleImage('content1') ">
+            <p>جنگجو</p>
+                <div class="ring">
                 <i></i>
                 <i></i>
                 <i></i>
@@ -80,6 +87,7 @@
         </div>
         <div id="content1" class="image-container" style="display: none;">
             <img src="art_nick_deligaris_dragon_rider_mountain_castle_tower_94138_1600x900.jpg" alt="">
+              <p style="color: aliceblue;">l;ljk;lj;j</p>
         </div>
         <div id="content2" class="image-container" style="display: none;">
             <img src="1467167_984.jpg" alt="">
@@ -136,17 +144,11 @@
         });
     </script>
     <script>
-     function ToggleImage(id) {
-    var allImages = document.querySelectorAll('.image-container img');
-    
-    allImages.forEach(function(image) {
-        image.classList.remove('active');
-    });
-
-    var content = document.getElementById(id);
-    content.classList.add('active');
-}
-
+        function stopAnimation() {
+    const heading = document.querySelector('biger');
+    heading.classList.remove('animate');
+  }
+  
     </script>
 </body>
 </html>
