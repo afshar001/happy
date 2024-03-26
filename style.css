@@ -36,7 +36,6 @@ h1{
 h2{
   color: beige;
   text-align: center;
-  animation: biger 3s infinite;
 }
 @keyframes  {
 0% {
