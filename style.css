@@ -38,7 +38,7 @@ h2{
   text-align: center;
   animation: biger 3s infinite;
 }
-@keyframes biger {
+@keyframes  {
 0% {
   font-size: 0;
 }
