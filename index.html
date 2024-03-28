@@ -55,7 +55,6 @@
      <meta property="og:image:type" content="image/jpeg">
      <meta charset="UTF-8">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11.0.7/swiper.min.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.4.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <link rel="script" href="jquery-3.6.0.min.js">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -73,13 +72,13 @@
         <div class="head">  
             <h1>HAPPY <br> NEW <br> YEAR</h1>
         </div>
-        <br><br>
-        <h2>  امسال که سال اژ دهاست کدوم شخصیتو اژدهارو انتخاب میکنی  <br>روی یکی از دکمه های زیر کلیک کن</div>
+        <h2>  امسال که سال اژ دهاست کدوم شخصیتو اژدهارو انتخاب میکنی  <br>روی یکی از دکمه های زیر کلیک کن
         </h2>
         <br><br>
-    <div class="grid-container">
-        <div class="buttons">
-            <button class="button" data-image-id="content1" onclick="ToggleImage('content1') ">
+        <br><br>
+        <div class="grid-container">
+            <div class="buttons">
+                <button class="button" data-image-id="content1" onclick="ToggleImage('content1') ">
             <p>جنگجو</p>
                 <div class="ring">
                 <i></i>
@@ -95,8 +94,8 @@
                         <i></i>
                     </div>
                 </button>
-                    <button class="button" data-image-id="content3" onclick="ToggleImage('content3')">
-                            <p>انتقام</p>
+                <button class="button" data-image-id="content3" onclick="ToggleImage('content3')">
+                    <p>انتقام</p>
                         <div class="ring">
                             <i></i>
                             <i></i>
@@ -137,10 +136,10 @@
         
         
         
-        </div>
+    </div>
         <div id="content1" class="image-container" style="display: none;">
             <img src="art_nick_deligaris_dragon_rider_mountain_castle_tower_94138_1600x900.jpg" alt="">
-             <h2>این یکی خود منم<br> اونایی ک مثل منن خودشون میفهمن معنی اینو <br> برو سراغ بقیه دکمه ها</h2>
+            <h2>این یکی خود منم<br> اونایی ک مثل منن خودشون میفهمن معنی اینو <br> برو سراغ بقیه دکمه ها</h2>
         </div>
         <div id="content2" class="image-container" style="display: none;">
             <img src="1467167_984.jpg" alt="">
@@ -168,7 +167,7 @@
         <img src="images.jpg" alt="">
     </div>
     
-</div>
+</div>    
     <script>
         function ToggleImage(id){
             var content = document.getElementById(id);
